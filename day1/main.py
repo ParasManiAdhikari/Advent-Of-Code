@@ -9,9 +9,6 @@ with open(file_name, "r") as file:
         col1.append(c1)
         col2.append(c2)
 
-# print("Column 1:", col1)
-# print("Column 2:", col2)
-
 col1.sort()
 col2.sort()
 
@@ -22,3 +19,13 @@ total_difference = sum(differences)
 # print("Column 2 Sorted:", col2)
 # print("\nDifferences (Row-wise):", differences)
 print("Sum of Differences:", total_difference)    #2430334
+
+
+## Part 2 - Similarity Score
+
+total_similarity = 0
+for num in col1:
+    col2_occurences = col2.count(num)
+    total_similarity += num * col2_occurences
+
+print("Sum of Similarity :",total_similarity)  #
