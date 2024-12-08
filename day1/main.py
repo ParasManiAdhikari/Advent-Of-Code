@@ -15,9 +15,6 @@ col2.sort()
 differences = [abs(c1 - c2) for c1, c2 in zip(col1, col2)]
 total_difference = sum(differences)
 
-# print("\nColumn 1 Sorted:", col1)
-# print("Column 2 Sorted:", col2)
-# print("\nDifferences (Row-wise):", differences)
 print("Sum of Differences:", total_difference)    #2430334
 
 
@@ -28,4 +25,4 @@ for num in col1:
     col2_occurences = col2.count(num)
     total_similarity += num * col2_occurences
 
-print("Sum of Similarity :",total_similarity)  #
+print("Sum of Similarity :",total_similarity)  #28786472
