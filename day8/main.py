@@ -1,8 +1,7 @@
 from itertools import combinations
-import sys
 from collections import defaultdict
 
-file_name = "day8\ex.txt"
+file_name = "day8\input.txt"
 
 with open(file_name, "r") as file:
     lines = list(map(str.strip, file.readlines()))
